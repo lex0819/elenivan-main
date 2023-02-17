@@ -34,16 +34,18 @@ body {
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 40px;
   justify-content: center;
 }
 
 .gallery__item {
   display: block;
-  width: 375px;
+  width: 360px;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  border-radius: 20px;
+  box-shadow: 10px 5px 20px 5px rgba(0, 0, 0, .5);
 }
 
 .gallery__item:hover {
@@ -51,14 +53,18 @@ body {
 }
 
 .gallery_img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gallery_img>img {
   display: block;
   width: 100%;
-  border-radius: 20px;
   transition: transform 0.4s;
 }
 
-.gallery_img:hover {
-  transform: scale(0.9);
+.gallery_img>img:hover {
+  transform: scale(1.2);
 }
 
 .gallery_desc {
